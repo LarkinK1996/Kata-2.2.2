@@ -1,12 +1,13 @@
-package web;
+package web.service;
 
 import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CarService {
+public class CarServiceImpl implements CarService {
 
+    @Override
     public List getCars(int quantity) {
         List<Car> cars = new ArrayList<>();
         cars.add(new Car(1, 22151, "bmv"));
